@@ -1,0 +1,12 @@
+{
+  "name": "react-native-paper-formik",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
