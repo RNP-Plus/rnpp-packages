@@ -9,19 +9,21 @@ export interface CheckboxItemFormikProps extends Omit<CheckboxItemProps, 'status
 
 export const CheckboxItemFormik: FC<CheckboxItemFormikProps> = ({ name, value: defaultValue, ...rest }) => {
     const [field, meta, helpers] = useField(name);
-    const { value, onBlur } = field;
+    const fieldValue = field.value;
     const { touched, error } = meta;
 
     const errorMessage = touched && error ? error : undefined;
     const hasError = errorMessage !== undefined;
-    const asArray = Array.isArray(value);
-    const isChecked = asArray ? (value as (string | number)[]).includes(defaultValue) : value === defaultValue;
+    const asArray = Array.isArray(fieldValue);
+    const isChecked = asArray
+        ? (fieldValue as (string | number)[]).includes(defaultValue)
+        : fieldValue === defaultValue;
 
     const handlePressed = async () => {
         const newValue = asArray
             ? isChecked
-                ? (value as (string | number)[]).filter(v => v !== defaultValue)
-                : [...value, defaultValue]
+                ? (fieldValue as (string | number)[]).filter(v => v !== defaultValue)
+                : [...fieldValue, defaultValue]
             : isChecked
               ? ''
               : defaultValue;

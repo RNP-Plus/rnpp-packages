@@ -1,6 +1,6 @@
 import { useField } from 'formik';
 import { FC } from 'react';
-import { Checkbox, SwitchProps, HelperText, Switch } from 'react-native-paper';
+import { SwitchProps, HelperText, Switch } from 'react-native-paper';
 
 export interface SwitchFormikProps extends Omit<SwitchProps, 'value' | 'onValueChange'> {
     name: string;
@@ -8,7 +8,6 @@ export interface SwitchFormikProps extends Omit<SwitchProps, 'value' | 'onValueC
 
 export const SwitchFormik: FC<SwitchFormikProps> = ({ name, ...rest }) => {
     const [field, meta, helpers] = useField(name);
-    const { value, onBlur } = field;
     const { touched, error } = meta;
 
     const errorMessage = touched && error ? error : undefined;
@@ -16,10 +15,10 @@ export const SwitchFormik: FC<SwitchFormikProps> = ({ name, ...rest }) => {
 
     const props: SwitchProps = {
         ...rest,
-        value,
+        value: field.value,
         onValueChange: async () => {
             await helpers.setTouched(true);
-            await helpers.setValue(!value);
+            await helpers.setValue(!field.value);
         },
     };
 

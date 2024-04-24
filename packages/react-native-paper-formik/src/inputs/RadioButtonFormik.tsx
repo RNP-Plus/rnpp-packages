@@ -9,12 +9,12 @@ export interface RadioButtonFormikProps extends Omit<RadioButtonProps, 'onPress'
 
 export const RadioButtonFormik: FC<RadioButtonFormikProps> = ({ name, value: defaultValue, ...rest }) => {
     const [field, meta, helpers] = useField(name);
-    const { value, onBlur } = field;
+
     const { touched, error } = meta;
 
     const errorMessage = touched && error ? error : undefined;
     const hasError = errorMessage !== undefined;
-    const isChecked = value === defaultValue;
+    const isChecked = field.value === defaultValue;
 
     const handlePressed = async () => {
         await helpers.setTouched(true);

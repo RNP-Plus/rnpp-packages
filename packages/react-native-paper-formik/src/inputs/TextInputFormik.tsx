@@ -8,7 +8,6 @@ export interface TextInputFormikProps extends TextInputProps {
 
 export const TextInputFormik: FC<TextInputFormikProps> = ({ name, ...rest }) => {
     const [field, meta, helpers] = useField(name);
-    const { value, onBlur } = field;
     const { touched, error } = meta;
 
     const errorMessage = touched && error ? error : undefined;
@@ -16,7 +15,7 @@ export const TextInputFormik: FC<TextInputFormikProps> = ({ name, ...rest }) => 
     const props: TextInputProps = {
         ...rest,
         error: hasError,
-        value,
+        value: field.value,
         onBlur: () => helpers.setTouched(true),
         onChangeText: (newText: string) => helpers.setValue(newText),
     };
