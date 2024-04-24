@@ -1,81 +1,33 @@
-# Turborepo starter
+# rnpp-packages
 
-This is an official starter Turborepo.
+`rnpp-packages` is a collection of packages aimed at enhancing the developer experience when using React Native Paper.
 
-## Using this example
+## Purpose
 
-Run the following command:
+React Native Paper is a popular UI library for React Native applications. However, building complex applications often
+requires additional functionality beyond what is provided out-of-the-box. `rnpp-packages` aims to fill this gap by
+offering a set of specialized packages that seamlessly integrate with React Native Paper, providing developers with
+ready-to-use solutions for common challenges.
 
-```sh
-npx create-turbo@latest
-```
+## Packages
 
-## What's inside?
+### [react-native-paper-formik](https://github.com/RNP-Plus/rnpp-packages/tree/main/packages/react-native-paper-formik)
 
-This Turborepo includes the following packages/apps:
+A collection of custom form input components for React Native Paper integrated with Formik.
 
-### Apps and Packages
+### [react-native-paper-snack-service](https://github.com/RNP-Plus/rnpp-packages/tree/main/packages/react-native-paper-snack-service) (Future Release)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+A service for easily integrating snackbars with React Native Paper.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### [react-native-paper-modal-service](https://github.com/RNP-Plus/rnpp-packages/tree/main/packages/react-native-paper-modal-service) (Future Release)
 
-### Utilities
+A service for managing modals with React Native Paper, providing an easy-to-use API for modal management.
 
-This Turborepo has some additional tools already setup for you:
+## Contributing
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+We welcome contributions to `rnpp-packages`! If you have an idea for a new package or would like to improve an existing
+one, please check out our [contribution guidelines](CONTRIBUTING.md).
 
-### Build
+## License
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+This project is licensed under the MIT License.

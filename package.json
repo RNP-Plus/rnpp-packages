@@ -1,7 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "rnpp-packages",
+  "description": "Monorepo containing packages to enhance the developer experience with React Native Paper.",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -34,5 +36,9 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RNP-Plus/rnpp-packages.git"
   }
 }
