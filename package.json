@@ -13,7 +13,11 @@
     "lint:fix": "turbo lint:fix",
     "ci:check": "turbo lint && turbo build",
     "clean": "rm -rf node_modules **/node_modules bun.lockb",
-    "clean:install": "bun run clean && bun install"
+    "clean:install": "bun run clean && bun install",
+    "publish-packages": "turbo run build lint && changeset version && changeset publish"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",

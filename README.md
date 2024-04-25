@@ -1,6 +1,6 @@
-# rnpp-packages
+# React Native Paper+ Packages
 
-`rnpp-packages` is a collection of packages aimed at enhancing the developer experience when using React Native Paper.
+`rnpp-packages` (React Native Paper Plus Packages) is a collection of packages aimed at enhancing the developer experience when using React Native Paper.
 
 ## Purpose
 

@@ -1,17 +1,24 @@
 {
-  "name": "react-native-paper-formik",
-  "version": "1.0.0",
+  "name": "@rnpp-packages/react-native-paper-formik",
+  "version": "1.3.0",
   "description": "A collection of custom form input components for React Native Paper integrated with Formik.",
   "keywords": [
     "react-native",
     "formik",
     "react-native-paper",
-    "react-native-paper with formik"
+    "react-native-paper with formik",
+    "formik bindings"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "author": "Angel S. Moreno <angelxmoreno@gmail.com>",
+  "files": [
+    "dist/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
