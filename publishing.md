@@ -26,7 +26,7 @@ bun changeset
 
 ### Create new versions of packages
 
-the following command update the change log file and apply the version bump for each package that had a previous
+the following command updates the change log file and applies the version bump for each package that had a previous
 changeset
 
 ```shell
