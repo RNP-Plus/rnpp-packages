@@ -6,7 +6,8 @@
     "react-native",
     "formik",
     "react-native-paper",
-    "react-native-paper with formik"
+    "react-native-paper with formik",
+    "formik bindings"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
