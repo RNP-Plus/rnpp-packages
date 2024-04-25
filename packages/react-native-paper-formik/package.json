@@ -1,5 +1,5 @@
 {
-  "name": "react-native-paper-formik",
+  "name": "@rnpp-packages/react-native-paper-formik",
   "version": "1.0.0",
   "description": "A collection of custom form input components for React Native Paper integrated with Formik.",
   "keywords": [
