@@ -12,6 +12,12 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "author": "Angel S. Moreno <angelxmoreno@gmail.com>",
+  "files": [
+    "dist/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
