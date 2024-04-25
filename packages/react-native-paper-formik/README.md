@@ -4,16 +4,23 @@ A collection of custom form input components for React Native Paper integrated w
 
 ## Installation
 
-You can install `react-native-paper-formik` via npm or yarn:
+You can install `react-native-paper-formik` via bun, yarn or npm:
+
 
 ```bash
-npm install react-native-paper-formik
+bun add @rnpp-packages/react-native-paper-formik
 ```
 
 or
 
 ```bash
-yarn add react-native-paper-formik
+yarn add @rnpp-packages/react-native-paper-formik
+```
+
+or
+
+```bash
+npm install @rnpp-packages/react-native-paper-formik
 ```
 
 This package has peer dependencies on `react`, `react-native-paper`, and `formik`. Make sure to install them if you
