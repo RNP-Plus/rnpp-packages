@@ -1,5 +1,11 @@
 # @rnpp-packages/react-native-paper-formik
 
+## 2.0.0
+
+### Major Changes
+
+- fixed typos
+
 ## 1.3.0
 
 ### Minor Changes
